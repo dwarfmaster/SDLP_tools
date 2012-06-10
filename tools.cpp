@@ -15,7 +15,8 @@ namespace sdl
 
 	Liberator& Liberator::operator()(SDL_Surface* surf)
 	{
-		SDL_FreeSurface(surf);
+		if(surf!=NULL)
+			SDL_FreeSurface(surf);
 		return *this;
 	}
 };
