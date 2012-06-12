@@ -27,7 +27,7 @@ namespace sdl
 		return oss.str();
 	}
 
-	int itoa(std::string nb)
+	int atoi(std::string nb)
 	{
 		std::istringstream iss(nb);
 		int nombre;

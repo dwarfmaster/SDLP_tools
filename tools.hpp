@@ -17,7 +17,7 @@ namespace sdl
 	};
 
 	std::string itoa(int nb);
-	int itoa(std::string nb);
+	int atoi(std::string nb);
 };
 
 #endif//DEF_SDLP_TOOLS
