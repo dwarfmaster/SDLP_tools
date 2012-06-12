@@ -2,6 +2,8 @@
 #define DEF_SDLP_TOOLS
 
 #include <SDL/SDL.h>
+#include <string>
+#include <sstream>
 
 namespace sdl
 {
@@ -13,6 +15,9 @@ namespace sdl
 			Liberator& operator=(const Liberator& cp);
 			Liberator& operator()(SDL_Surface* surf);
 	};
+
+	std::string itoa(int nb);
+	int itoa(std::string nb);
 };
 
 #endif//DEF_SDLP_TOOLS
