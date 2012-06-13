@@ -7,6 +7,6 @@ Name: SDLP_tools
 Description: Différents outils pour mieux gérer la SDL.
 Version: 0.1
 Requires: sdl >= 1.2.10
-Libs: -L${libdir} -lSDLP_position
+Libs: -L${libdir} -lSDLP_tools
 Cflags: -I${includedir} -std=gnu++0x
 
