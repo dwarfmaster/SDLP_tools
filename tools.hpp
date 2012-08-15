@@ -1,3 +1,9 @@
+/*!
+ * \file tools.hpp
+ * \brief Définit la classe Liberator et autres outils.
+ * \author Luc Chabassier
+ */
+
 #ifndef DEF_SDLP_TOOLS
 #define DEF_SDLP_TOOLS
 

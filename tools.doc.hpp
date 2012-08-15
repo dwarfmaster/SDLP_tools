@@ -4,12 +4,6 @@
  */
 
 /*!
- * \file tools.hpp
- * \brief Définit la classe Liberator et autres outils.
- * \author Luc Chabassier
- */
-
-/*!
  * \namespace sdl
  * \brief Contient les fonctions des bibliothèques SDLP_qqchose.
  */
