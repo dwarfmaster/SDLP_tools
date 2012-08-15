@@ -47,4 +47,8 @@ mr-proper : uninstall clean
 
 reinstall : uninstall rec install
 
+doc : doc/Doxyfile
+	cd doc && doxygen Doxyfile
+	firefox doc/html/index.html > /dev/null 2>&1 &
 
+.PHONY : doc

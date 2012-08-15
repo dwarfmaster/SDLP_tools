@@ -1,3 +1,8 @@
+/*!
+ * \file tools.cpp
+ * \brief Implémente les fonctions de tools.hpp
+ */
+
 #include "tools.hpp"
 
 namespace sdl
