@@ -24,7 +24,7 @@ install : $(LIB)
 	@cp -v $(LIB) $(DEST)
 	@mkdir $(INCSDIR)
 	@cp -v $(INCFILE) $(INCLUDES)
-	@cp -v `ls *.hpp --ignore=$(INCFILE)` $(INCSDIR)
+	@cp -v `ls src/*.hpp --ignore=$(INCFILE)` $(INCSDIR)
 	@cp -v $(PCFILE) $(PCDIR)
 
 uninstall : $(LIBS)
