@@ -1,10 +1,5 @@
-OBJS=tools.o
-NAME=SDLP_tools
+include param.mk
 
-CXXFLAGS=-Wall -Wextra `sdl-config --cflags` -fPIC -fsigned-bitfields -std=gnu++0x -g
-LDFLAGS=-shared
-
-LIB=lib$(NAME).so
 DEST=/home/luc/libs
 VERSION=0.1
 
@@ -17,16 +12,11 @@ PCDIR=/usr/lib/pkgconfig
 
 all : $(LIB)
 
-$(LIB) : $(OBJS)
-	g++ $(CXXFLAGS)    -o $@	$^ $(LDFLAGS)
-	chmod -x $(LIB)
-
-%.o : %.cpp %.hpp
-	g++ $(CXXFLAGS) -c -o $@	$<
+$(LIB) :
+	cd src && make
 
 clean :
-	@touch $(OBJS) $(LIB)
-	@rm -v $(OBJS) $(LIB)
+	cd src && make clean
 
 rec : clean all
 
